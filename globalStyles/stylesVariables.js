@@ -2,6 +2,7 @@ export const colors = {
 	main: '#98ca3f', //green
 	second: '#182C3F', // blue
 	lightSecond: '#3C8DC7', // light blue
+	darkSecond: '#0D4976', // light blue
 	white: '#F9F9F9', // white
 	text: '#4c4c4c', //gray
 };
