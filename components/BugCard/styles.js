@@ -10,12 +10,17 @@ export const Card = styled.div`
   color: #fff;
   margin: 10px;
   overflow: hidden;
+  box-shadow: 3px 3px 5px grey;
   display: grid;
   grid-template-rows: 10% 17% 48% 10% 15%;
 
   &:hover {
     cursor: pointer;
     ${hoverScale()};
+  }
+
+  &:hover .BugCard__link {
+    color: #98ca3f;
   }
 `
 

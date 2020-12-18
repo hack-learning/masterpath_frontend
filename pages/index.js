@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Layout } from '../components/Layout';
 
 import { BugCard } from '../components/BugCard'
+import { NewsCard } from '../components/NewsCard'
 // import Styles
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
 				<button>Go to master path</button>
 			</Link>
 			<BugCard />
+			<NewsCard />
 		</>
 	);
 };

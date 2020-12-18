@@ -12,7 +12,7 @@ export const BugCard = ( {title, description, project, user} ) => {
 
   return (
     <Card>
-      <LinkIcon><BsBoxArrowUpRight size="20px"/></LinkIcon>
+      <LinkIcon className="BugCard__link"><BsBoxArrowUpRight size="20px"/></LinkIcon>
       <BugTitle>{title}</BugTitle>
       <BugDescription>{description}</BugDescription>
       <ProjectName>{project}</ProjectName>
