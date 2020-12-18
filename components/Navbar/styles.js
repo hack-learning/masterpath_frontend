@@ -14,6 +14,8 @@ export const NavbarContainer = styled.main`
 	align-items: center;
 	border-radius: ${border.borderRadiusBig};
 	background-color: ${colors.second};
+	border: 2px solid rgba(60, 141, 199, 0.2);
+	box-shadow: 5px 5px 20px rgba(10, 48, 77, 0.8);
 
 	button {
 		margin-top: auto;

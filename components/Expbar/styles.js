@@ -7,25 +7,27 @@ import { colors, border } from '../../globalStyles/stylesVariables';
 // ---------- COMPONENTS ---------- //
 export const Bar = styled.main`
 	position: relative;
-	padding: 5px 50px;
+	padding: 5px 40px;
 	text-align: center;
 	color: ${colors.white};
 	background-color: ${colors.second};
 	border-radius: ${border.borderRadiusBig};
 	border: 2px solid ${colors.main};
 	transform: translateY(-50%);
+	overflow: hidden;
 	&:after {
 		position: absolute;
 		content: '';
 		top: -1px;
 		left: -1px;
 		bottom: -1px;
-		width: 50%;
-		z-index: 1;
+		width: ${(props) => `${props.XP}%`};
+		z-index: -1;
 		border-radius: ${border.borderRadiusBig};
 		background-color: ${colors.main};
+		transition: 0.3s;
 	}
 	p {
-		z-index: 2;
+		font-weight: bold;
 	}
 `;
