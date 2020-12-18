@@ -9,7 +9,8 @@ export const Card = styled.div`
   background-color: #3c8dc7;
   opacity: 1;
   overflow: hidden;
-  box-shadow: 5px 5px 5px grey;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 5px rgba(24, 44, 63, 0.6);
   color: #98ca3f;
   display: grid;
   grid-template-columns: 73% 27%;
