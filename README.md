@@ -5,4 +5,4 @@ Here it will live the frontend code of the project Master Path
 (insert url)
 
 ## Data Science Repository
-(insert url)
+https://github.com/hack-learning/masterpath_frontend.git
