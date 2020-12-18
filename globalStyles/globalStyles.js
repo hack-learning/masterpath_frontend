@@ -2,7 +2,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 // import variables
-import { fonts } from './stylesVariables';
+import { colors, fonts } from './stylesVariables';
 
 export const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400;700&display=swap');
@@ -32,5 +32,9 @@ export const GlobalStyle = createGlobalStyle`
     font-size: ${fonts.small};
     margin: 0;
   }
-
+  .active {
+    width: 60% !important;
+    color: ${colors.main} !important;
+    box-shadow: 1px 1px 10px rgba(60, 141, 199, 0.5);
+  }
 `;

@@ -37,7 +37,7 @@ const mediaSize = {
 };
 
 export const mediaQueries = {
-	mobile: `(min-width: ${mediaSize.mobile})`,
-	tablet: `(min-width: ${mediaSize.tablet})`,
-	desktop: `(min-width: ${mediaSize.desktop})`,
+	mobile: `(max-width: ${mediaSize.mobile})`,
+	tablet: `(max-width: ${mediaSize.tablet})`,
+	desktop: `(max-width: ${mediaSize.desktop})`,
 };

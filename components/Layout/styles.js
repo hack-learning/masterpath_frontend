@@ -6,10 +6,10 @@ import { colors } from '../../globalStyles/stylesVariables';
 
 // ---------- COMPONENTS ---------- //
 export const LayoutContainer = styled.main`
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
-	align-items: center;
 	padding: 0 2em;
+	padding-top: 1.5em;
 	background-color: ${colors.darkSecond};
 `;
 
@@ -17,5 +17,4 @@ export const Content = styled.main`
 	margin-left: 400px;
 	height: 95%;
 	width: 100%;
-	display: flex;
 `;
