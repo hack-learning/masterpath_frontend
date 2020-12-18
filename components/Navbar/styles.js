@@ -38,12 +38,25 @@ export const NavbarImage = styled.div`
 	position: relative;
 	margin: 2em 0;
 	text-align: center;
+
 	img {
 		width: 130px;
 		height: 130px;
 		object-fit: cover;
 		border: 2px solid ${colors.main};
 		border-radius: 50%;
+	}
+
+	h3 {
+		color: ${colors.white};
+	}
+
+	p {
+		color: ${colors.white};
+		span {
+			color: ${colors.main};
+			font-weight: bold;
+		}
 	}
 `;
 
@@ -52,6 +65,7 @@ export const NavbarList = styled.ul`
 	list-style: none;
 	padding: 0;
 	align-self: flex-start;
+
 	li {
 		width: 35%;
 		margin: 1em 0;
@@ -68,5 +82,9 @@ export const NavbarList = styled.ul`
 			color: ${colors.main};
 			box-shadow: 3px 3px 10px rgba(60, 141, 199, 0.5);
 		}
+	}
+
+	a {
+		text-decoration: none;
 	}
 `;
