@@ -1,17 +1,19 @@
 // import Libraries
+import Link from 'next/link';
 
 // import Components
+import { Layout } from '../components/Layout';
+
 // import Styles
 
 const Home = () => {
 	return (
-		<div>
-			<h1>Somos los 6 Fellas</h1>
-			<h2>Somos los 6 Fellas</h2>
-			<h3>Somos los 6 Fellas</h3>
-			<p>Somos los 6 Fellas</p>
-			<small>Somos los 6 Fellas</small>
-		</div>
+		<>
+			<h1>Esto es el home</h1>
+			<Link href="/master-path">
+				<button>Go to master path</button>
+			</Link>
+		</>
 	);
 };
 
