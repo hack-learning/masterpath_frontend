@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
 import { hoverOpacity } from '../../globalStyles/animations'
+import { colors } from '../../globalStyles/stylesVariables'
 
 export const Card = styled.div`
   width: 416px;
   height: 120px;
   border-radius: 20px;
-  background-color: #3c8dc7;
+  background-color: ${colors.lightSecond};
   opacity: 1;
   overflow: hidden;
-  box-shadow: 5px 5px 5px grey;
-  color: #98ca3f;
+  box-shadow: 5px 5px 5px black;
+  color: ${colors.main};
   display: grid;
   grid-template-columns: 73% 27%;
 
