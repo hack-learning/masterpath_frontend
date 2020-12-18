@@ -9,7 +9,7 @@ const hoverScaleKeyFrames = keyframes`
 
   to {
     transform: scale(1.01);
-    box-shadow: 3px 3px 5px grey;
+    box-shadow: 5px 5px 5px grey;
   }
 `
 
