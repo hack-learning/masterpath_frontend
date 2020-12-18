@@ -1,7 +1,7 @@
 import { BugCard } from '../BugCard'
 import { Container } from './style'
 
-export const BugCardContainer = (data) => {
+export const BugCardContainer = ({ data }) => {
 
   data = [
     {
