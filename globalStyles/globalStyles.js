@@ -9,22 +9,28 @@ export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: ${fonts.fontLato};
   }
   h1 {
     font-size: ${fonts.h1};
+    margin: 0;
     }
 	h2 {
     font-size: ${fonts.h2};
+    margin: 0;
   }
 	h3 {
     font-size: ${fonts.h3};
+    margin: 0;
   }
 	p {
     font-size: ${fonts.p};
+    margin: 0;
   }
 	small {
     font-size: ${fonts.small};
+    margin: 0;
   }
 
 `;
