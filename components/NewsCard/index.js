@@ -1,14 +1,11 @@
 import { Card, NewsTitle, ImgContainer, Img } from './style'
 
-import { gravatar } from '../../utils/gravatar'
 
-export const NewsCard = ({ title, img }) => {
+export const NewsCard = ({ title, img, url }) => {
 
-  title = 'NEWS TITLE lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum'
-  img = gravatar('garavitogerardo@gmail.com')
 
   return (
-    <Card>
+    <Card href={url} target="_blank">
       <NewsTitle>{title}</NewsTitle>
       <ImgContainer>
         <Img src={img} />

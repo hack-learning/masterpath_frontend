@@ -34,7 +34,7 @@ const mediaSize = {
 	mobile: '320px',
 	tablet: '720px',
 	miniDesktop: '920px',
-	littleDesktop: '1200px',
+	littleDesktop: '1315px',
 	desktop: '1440px',
 };
 
