@@ -33,11 +33,15 @@ export const border = {
 const mediaSize = {
 	mobile: '320px',
 	tablet: '720px',
+	miniDesktop: '920px',
+	littleDesktop: '1200px',
 	desktop: '1440px',
 };
 
 export const mediaQueries = {
 	mobile: `(max-width: ${mediaSize.mobile})`,
 	tablet: `(max-width: ${mediaSize.tablet})`,
+	miniDesktop: `(max-width: ${mediaSize.miniDesktop})`,
+	littleDesktop: `(max-width: ${mediaSize.littleDesktop})`,
 	desktop: `(max-width: ${mediaSize.desktop})`,
 };
