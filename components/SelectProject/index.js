@@ -15,6 +15,7 @@ export const SelectProject = () => {
             <ModalSelectProject open={project}>
                 <img onClick={closeModal} src='/Closebtn.svg' alt="Close icon" />
                 <h1>Projects</h1>
+                <button type="submit">Select</button>
             </ModalSelectProject>
     )
   }

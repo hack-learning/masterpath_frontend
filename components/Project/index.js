@@ -8,7 +8,7 @@ import { ProjectContainer, Button } from './styles';
 export const Project = () => {
 	return (
 		<>
-			<Button>Seleccionar proyecto</Button>
+			<Button>Select Project</Button>
 			<ProjectContainer>
 				<a
 					target="_blank"
