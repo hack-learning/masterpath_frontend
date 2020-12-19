@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { AiFillCheckCircle } from 'react-icons/ai';
 import { useDispatch } from 'react-redux';
 
-import { stepSucces } from '../../redux/actions/userActions';
+import { courseSucces } from '../../redux/actions/userActions';
 // import Styles
 import { Card, CheckcompletCours } from './styles';
 
@@ -14,7 +14,7 @@ export const CourseCard = ({ badge, name, link }) => {
 
 	const endStep = () => {
 		setcheckCourse(true);
-		dispatch(stepSucces());
+		dispatch(courseSucces());
 	};
 	return (
 		<Card checkCourse={checkCourse}>

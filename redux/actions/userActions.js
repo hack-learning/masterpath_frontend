@@ -35,9 +35,11 @@ export const courseSucces = () => (dispatch, getState) => {
 
 	const { exp } = getState().userState;
 	if (exp === 100) {
-		dispatch({
-			type: 'LEVEL_UP',
-		});
+		setTimeout(() => {
+			dispatch({
+				type: 'LEVEL_UP',
+			});
+		}, 500);
 	}
 };
 
@@ -48,8 +50,10 @@ export const bugSucces = () => (dispatch, getState) => {
 
 	const { exp } = getState().userState;
 	if (exp === 100) {
-		dispatch({
-			type: 'LEVEL_UP',
-		});
+		setTimeout(() => {
+			dispatch({
+				type: 'LEVEL_UP',
+			});
+		}, 500);
 	}
 };

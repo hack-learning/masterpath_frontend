@@ -41,6 +41,7 @@ export const CheckcompletCours = styled.button`
 	outline: none;
 	transition: 0.3s;
 	cursor: pointer;
+	z-index: 4;
 
 	svg {
 		width: 30px;
