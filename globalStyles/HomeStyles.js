@@ -18,6 +18,7 @@ export const Form = styled.form`
 	padding: 3em 2em;
 	background-color: ${colors.second};
 	border-radius: ${border.borderRadiusBig};
+	box-shadow: 5px 5px 20px rgba(10, 48, 77, 0.8);
 
 	h1 {
 		color: ${colors.main};
@@ -30,6 +31,9 @@ export const Form = styled.form`
 		color: ${colors.white};
 		font-size: 1.2em;
 		margin-bottom: 0.2em;
+	}
+	p {
+		color: ${colors.white};
 	}
 
 	button {
@@ -44,6 +48,7 @@ export const Form = styled.form`
 		cursor: pointer;
 		transition: 0.3s;
 		font-size: 1.2em;
+		outline: none;
 
 		&:hover {
 			background-color: ${colors.main};
