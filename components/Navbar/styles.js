@@ -74,7 +74,7 @@ export const NavbarList = styled.ul`
 		background-color: ${colors.lightSecond};
 		font-weight: bold;
 		text-align: right;
-		color: ${colors.second};
+		color: ${colors.white};
 		cursor: pointer;
 		transition: 0.5s;
 		&:hover {

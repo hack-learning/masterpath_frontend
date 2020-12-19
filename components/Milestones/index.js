@@ -12,12 +12,12 @@ export const Milestones = ({ number }) => {
 	const [check, setcheck] = useState(false);
 	return (
 		<Container>
-			<MilestoneBadge number="01" />
-			<MilestoneBadge number="02" />
-			<MilestoneBadge number="03" />
-			<MilestoneBadge number="04" />
-			<MilestoneBadge number="05" />
-			<MilestoneBadge number="06" />
+			<MilestoneBadge number="01" name="Requerimientos" />
+			<MilestoneBadge number="02" name="Diseño" />
+			<MilestoneBadge number="03" name="Desarrollo" />
+			<MilestoneBadge number="04" name="Pruebas" />
+			<MilestoneBadge number="05" name="Despliegue" />
+			<MilestoneBadge number="06" name="Operaciones" />
 		</Container>
 	);
 };
