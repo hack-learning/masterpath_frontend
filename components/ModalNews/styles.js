@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { colors } from '../../globalStyles/stylesVariables'
 
 export const ModalNewsContainer = styled.div`
-  width: 500px;
+  width: 420px;
   height: 500px;
   padding: 10px;
   z-index: 50;
@@ -35,4 +35,14 @@ export const ModalTitel = styled.h3`
   margin-bottom: 15px;
   overflow: hidden;
   color: ${colors.lightSecond};
+  display: flex;
+  justify-content: space-between;
+
+    img{
+        cursor: pointer;
+    }
+    
+`
+export const ModalNewsClose = styled.div`
+    display: none;
 `
