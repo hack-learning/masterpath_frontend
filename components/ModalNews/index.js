@@ -1,16 +1,26 @@
+import { useEffect, useState } from 'react';
+
 //import component
 import { NewsCardNotification } from '../NewsCardNotification'
-import React, { useState } from 'react';
 
+import { axiosClient } from '../../axiosClient';
 //import Style
 import { ModalNewsContainer, ModalTitel } from './styles'
 
 export const ModalNews = () => {
   const [clase, setClase] = useState(true);
+  const [notificationNews, setnotificationNews] = useState([]);
         
   const closeModal = () => {
       setClase(false);
   };
+
+	useEffect(() => {
+		(async function getCourses() {
+			const { data, status } = await axiosClient.get('information-list/');
+			setnotificationNews(data);
+		})();
+	}, []);
   
     return (
       <ModalNewsContainer open={clase}>
@@ -18,6 +28,13 @@ export const ModalNews = () => {
             <img onClick={closeModal} src='/Closebtn.svg' alt="Close icon" />
             <h3>News</h3>  
           </ModalTitel>
+          {/* {notificationNews.slice(3).map((course) => (
+					<NewsCardNotification
+						titel={titel}
+						url={url}
+						pub_time={pub_data}
+					/>
+				))} */}
         <NewsCardNotification />
         <NewsCardNotification />
         <NewsCardNotification />
