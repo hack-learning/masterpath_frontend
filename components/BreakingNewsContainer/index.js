@@ -14,8 +14,8 @@ export const BreakingNewsContainer = ({ data }) => {
       overview: "lorem ipsum lorem ipsum lorem sips lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem sips lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem sips lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem sips lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
       id: 0,
       tags: [
-        'react',
-        'next',
+        'styled-components',
+        'styled-components',
         'styled-components',
       ]
     },
