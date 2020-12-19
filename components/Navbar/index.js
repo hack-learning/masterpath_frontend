@@ -17,7 +17,7 @@ export const Navbar = () => {
 	const router = useRouter();
 	const { route } = router;
 	const dispatch = useDispatch();
-	const { name, email, lv } = useSelector((state) => state.userState);
+	const { user, email, lv } = useSelector((state) => state.userState);
 
 	useEffect(() => {
 		dispatch(login());
@@ -26,12 +26,12 @@ export const Navbar = () => {
 	return (
 		<NavbarContainer>
 			<NavbarImage>
-				<img src={gravatar(email)} alt={name} />
+				<img src={gravatar(email)} alt={user} />
 				<Expbar />
-				<h3>{name}</h3>
-				<p>
+				<h3>{user}</h3>
+				<h2>
 					Lv: <span>{lv}</span> / 50
-				</p>
+				</h2>
 			</NavbarImage>
 			<NavbarList>
 				<Link href="/master-path">
