@@ -20,8 +20,21 @@ export const Container = styled.section`
 		props.check === true ? `${colors.darkSecond}` : `${colors.main}`};
 
 	&::after {
+		content: '';
 		position: absolute;
-		content: ${(props) => props.name || 'Milestone'};
+		top: -100px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		background-color: ${colors.main};
+	}
+
+	h3 {
+		position: absolute;
+		top: -105px;
+		left: 65px;
 	}
 
 	p {

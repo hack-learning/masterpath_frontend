@@ -5,10 +5,11 @@ import { useState } from 'react';
 import { Container } from './styles';
 
 // ---------- COMPONENT ---------- //
-export const MilestoneBadge = ({ number }) => {
+export const MilestoneBadge = ({ number, name }) => {
 	const [check, setcheck] = useState(false);
 	return (
 		<Container check={check} name="hola">
+			<h3>{name}</h3>
 			<p>{number}</p>
 		</Container>
 	);
