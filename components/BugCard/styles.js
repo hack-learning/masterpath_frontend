@@ -98,5 +98,6 @@ export const CheckButton = styled.button`
 
 	&:hover {
 		background-color: ${colors.main};
+		cursor: pointer;
 	}
 `
