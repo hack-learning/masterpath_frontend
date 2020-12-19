@@ -4,12 +4,12 @@ import { css, keyframes } from 'styled-components'
 const hoverScaleKeyFrames = keyframes`
   from {
     transform: scale(1);
-    box-shadow: 3px 3px 5px grey;
+    box-shadow: 3px 3px 5px black;
   }
 
   to {
     transform: scale(1.01);
-    box-shadow: 3px 3px 5px grey;
+    box-shadow: 5px 5px 5px black;
   }
 `
 
@@ -25,13 +25,13 @@ const hoverOpacityKeyFrames = keyframes`
   from {
     opacity: 1;
     transform: scale(1);
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 5px 5px 5px black;
   }
 
   to {
     opacity: 0.9;
     transform: scale(0.99);
-    box-shadow: 3px 3px 5px grey;
+    box-shadow: 3px 3px 5px black;
   }
 `
 

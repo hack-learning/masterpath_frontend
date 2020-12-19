@@ -1,18 +1,20 @@
 import styled from 'styled-components'
 
 import { hoverScale } from '../../globalStyles/animations'
+import { colors } from '../../globalStyles/stylesVariables'
 
-export const Card = styled.div`
+export const Card = styled.a`
   height: 300px;
   width: 216px;
-  background-color: #182c3f;
+  background-color: ${colors.second};
   border-radius: 20px;
-  color: #fff;
+  color: ${colors.white};
+  text-decoration: none;
   margin: 10px;
   overflow: hidden;
-  box-shadow: 3px 3px 5px grey;
+  box-shadow: 3px 3px 5px black;
   display: grid;
-  grid-template-rows: 10% 17% 48% 10% 15%;
+  grid-template-rows: 10% 12% 46% 7% 10% 15%;
 
   &:hover {
     cursor: pointer;
@@ -32,7 +34,7 @@ export const LinkIcon = styled.div`
 `
 
 export const BugTitle = styled.h3`
-  color: #98ca3f;
+  color: ${colors.main};
   font-size: 14px;
   margin: 0px 10px;
   grid-row: 2 / 3;
@@ -42,6 +44,7 @@ export const BugTitle = styled.h3`
 export const BugDescription = styled.p`
   font-size: 12px;
   margin: 10px;
+  color: ${colors.white};
   text-align: justify;
   grid-row: 3 / 4;
   overflow: hidden;
@@ -51,7 +54,7 @@ export const ProjectName = styled.h4`
   font-size: 14px;
   font-weight: bold;
   margin: 10px 10px 5px 10px;
-  grid-row: 4 / 5;
+  grid-row: 5 / 6;
   overflow: hidden;
   white-space:nowrap;
   text-overflow: ellipsis;
@@ -60,7 +63,7 @@ export const ProjectName = styled.h4`
 export const UserName = styled.p`
   font-size: 12px;
   margin: 5px 10px;
-  grid-row: 5 / 6;
+  grid-row: 6 / 7;
   overflow: hidden;
   white-space:nowrap;
   text-overflow: ellipsis;

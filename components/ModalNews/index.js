@@ -9,6 +9,7 @@ export const ModalNews = () => {
     return (
       <ModalNewsContainer>
           <ModalTitel>
+              <img src='/Close.svg' alt="Close icon" />
             <h3>News</h3>  
           </ModalTitel>
         <NewsCard />
