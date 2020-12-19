@@ -46,10 +46,13 @@ export const Tags = styled.div`
 
 	& p {
 		color: ${colors.white};
-		background-color: ${colors.second};
-		padding: 5px 10px;
+		background-color: ${colors.main};
+		padding: 2px 10px;
 		border-radius: 5px;
 		max-width: 65px;
+		height: 14px;
+		font-size: 12px;
+		opacity: 0.9;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;
