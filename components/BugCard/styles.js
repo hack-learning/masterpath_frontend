@@ -34,8 +34,7 @@ export const Card = styled.a`
 	overflow: hidden;
 	box-shadow: 5px 5px 10px rgba(10, 48, 77, 0.8);
 	display: grid;
-	grid-template-rows: 15% 15% 46% 0% 15% 10% ;
-
+	grid-template-rows: 15% 15% 46% 0% 13% 12% ;
 `;
 
 export const LinkIcon = styled.div`
