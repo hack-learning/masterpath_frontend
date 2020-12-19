@@ -1,6 +1,4 @@
-import React from 'react'
-
-import { Container, Title } from './styles'
+import { Container, News, Title } from './styles'
 import { gravatar } from '../../utils/gravatar'
 
 import { NewsCard } from '../NewsCard'
@@ -32,15 +30,15 @@ export const BreakingNewsContainer = ({ data }) => {
   ]
 
   return(
-    <React.Fragment>
+    <Container>
       <Title>Breaking News</Title>
-      <Container>
+      <News>
         {
           data.map(item => (
             <NewsCard {...item} />
           ))
         }
-      </Container>
-    </React.Fragment>
+      </News>
+    </Container>
   )
 }
