@@ -1,12 +1,8 @@
 // import Libraries
 import { useRouter } from 'next/router';
 
-// import Components
-import { Container, Form, Input } from '../globalStyles/HomeStyles';
-
-import { BugCard } from '../components/BugCard';
-import { NewsCard } from '../components/NewsCard';
 // import Styles
+import { Container, Form, Input } from '../globalStyles/HomeStyles';
 
 const Home = () => {
 	const router = useRouter();
@@ -24,6 +20,7 @@ const Home = () => {
 				<Input type="text" id="e-mail" placeholder="e-mail" />
 				<label htmlFor="Password">Password</label>
 				<Input type="text" id="Password" placeholder="Password" />
+				<p>Nota: Solo haz clic en login para navegar</p>
 				<button type="submit">Login</button>
 			</Form>
 		</Container>
