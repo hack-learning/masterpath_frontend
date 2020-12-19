@@ -22,7 +22,7 @@ export const Card = styled.div`
 		color: ${colors.white};
 	}
 	background-color: ${(props) =>
-		props.finish ? `${colors.main}` : `${colors.text}`};
+		props.finish ? `${colors.main}` : `${colors.second}`};
 
 	img {
 		width: 35px;

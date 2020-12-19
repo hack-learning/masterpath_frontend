@@ -7,7 +7,7 @@ import { border, colors } from '../../globalStyles/stylesVariables';
 // ---------- COMPONENTS ---------- //
 export const Container = styled.section`
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	margin-bottom: 20em;
 	transform: translateY(40%);
 
@@ -15,11 +15,11 @@ export const Container = styled.section`
 		&::before {
 			position: absolute;
 			content: '';
-			width: 100px;
+			width: 190px;
 			height: 50px;
-			left: 70%;
-			top: 100%;
-			transform: rotateZ(45deg);
+			left: 90%;
+			top: 80%;
+			transform: rotateZ(25deg);
 			background-image: url('/union.svg');
 		}
 	}
@@ -28,11 +28,11 @@ export const Container = styled.section`
 		&::before {
 			position: absolute;
 			content: '';
-			width: 100px;
+			width: 190px;
 			height: 50px;
-			right: -70%;
-			bottom: 100%;
-			transform: rotateZ(-45deg);
+			left: 90%;
+			bottom: 90%;
+			transform: rotateZ(-25deg);
 			background-image: url('/union.svg');
 		}
 	}
