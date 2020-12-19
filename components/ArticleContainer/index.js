@@ -66,7 +66,7 @@ export const ArticleContainer = ({ data }) => {
       <Articles>
       <Title>Library</Title>
       {
-        data.map( item => (
+        data.slice(0,10).map( item => (
           <ArticleCard key={item.id} {...item} />
         ))
       }
