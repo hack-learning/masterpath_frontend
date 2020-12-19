@@ -1,6 +1,6 @@
 import Axios from 'axios';
 
-const BASE_URL = '';
+const BASE_URL = 'https://apifellas.azurewebsites.net/api/';
 
 const request = async (path, method, body) => {
 	try {

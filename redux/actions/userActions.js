@@ -13,20 +13,43 @@ export const login = () => (dispatch) => {
 	});
 };
 
-export const stepSucces = () => (dispatch) => {
+export const stepSucces = () => (dispatch, getState) => {
 	dispatch({
 		type: 'STEP_SUCCES',
 	});
+
+	const { exp } = getState().userState;
+	if (exp === 100) {
+		setTimeout(() => {
+			dispatch({
+				type: 'LEVEL_UP',
+			});
+		}, 500);
+	}
 };
 
-export const courseSucces = () => (dispatch) => {
+export const courseSucces = () => (dispatch, getState) => {
 	dispatch({
 		type: 'COURSE_SUCCES',
 	});
+
+	const { exp } = getState().userState;
+	if (exp === 100) {
+		dispatch({
+			type: 'LEVEL_UP',
+		});
+	}
 };
 
-export const bugSucces = () => (dispatch) => {
+export const bugSucces = () => (dispatch, getState) => {
 	dispatch({
 		type: 'BUG_SUCCES',
 	});
+
+	const { exp } = getState().userState;
+	if (exp === 100) {
+		dispatch({
+			type: 'LEVEL_UP',
+		});
+	}
 };

@@ -18,6 +18,8 @@ export const userState = (state = initial_state, action) => {
 			return { ...state, exp: state.exp + 10 };
 		case 'BUG_SUCCES':
 			return { ...state, exp: state.exp + 20 };
+		case 'LEVEL_UP':
+			return { ...state, exp: 0, lv: state.lv + 1 };
 		default:
 			return state;
 	}
