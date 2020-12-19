@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 
 // import variables
-import { border, colors } from '../../globalStyles/stylesVariables';
+import { mediaQueries, colors } from '../../globalStyles/stylesVariables';
 
 // ---------- COMPONENTS ---------- //
 export const Container = styled.section`
@@ -18,6 +18,11 @@ export const Container = styled.section`
 		props.check === true ? `${colors.main}` : `${colors.darkSecond}`};
 	color: ${(props) =>
 		props.check === true ? `${colors.darkSecond}` : `${colors.main}`};
+	@media ${mediaQueries.desktop} {
+		width: 80px;
+		height: 80px;
+		border: 6px solid ${colors.main};
+	}
 
 	&::after {
 		content: '';
@@ -35,6 +40,9 @@ export const Container = styled.section`
 		position: absolute;
 		top: -105px;
 		left: 65px;
+		@media ${mediaQueries.desktop} {
+			top: -95px;
+		}
 	}
 
 	p {

@@ -2,14 +2,19 @@
 import styled from 'styled-components';
 
 // import variables
-import { border, colors } from '../../globalStyles/stylesVariables';
+import { mediaQueries } from '../../globalStyles/stylesVariables';
 
 // ---------- COMPONENTS ---------- //
 export const Container = styled.section`
+	width: 1440px;
 	display: flex;
 	justify-content: space-around;
 	margin-bottom: 20em;
 	transform: translateY(40%);
+	@media ${mediaQueries.desktop} {
+		width: 920px;
+		margin-bottom: 12em;
+	}
 
 	section:nth-child(odd) {
 		&::before {
@@ -21,6 +26,15 @@ export const Container = styled.section`
 			top: 80%;
 			transform: rotateZ(25deg);
 			background-image: url('/union.svg');
+			background-repeat: no-repeat;
+			background-size: 100%;
+			@media ${mediaQueries.desktop} {
+				width: 100px;
+				height: 50px;
+				left: 80%;
+				top: 90%;
+				transform: rotateZ(30deg);
+			}
 		}
 	}
 	section:nth-child(even) {
@@ -34,6 +48,15 @@ export const Container = styled.section`
 			bottom: 90%;
 			transform: rotateZ(-25deg);
 			background-image: url('/union.svg');
+			background-repeat: no-repeat;
+			background-size: 100%;
+			@media ${mediaQueries.desktop} {
+				width: 100px;
+				height: 50px;
+				left: 90%;
+				bottom: 70%;
+				transform: rotateZ(-35deg);
+			}
 		}
 	}
 	section:last-of-type {

@@ -2,7 +2,11 @@
 import styled from 'styled-components';
 
 // import variables
-import { colors, border } from '../../globalStyles/stylesVariables';
+import {
+	colors,
+	border,
+	mediaQueries,
+} from '../../globalStyles/stylesVariables';
 
 // ---------- COMPONENTS ---------- //
 export const ProjectContainer = styled.section`
@@ -11,6 +15,10 @@ export const ProjectContainer = styled.section`
 	padding: 1.5em;
 	border-radius: ${border.borderRadiusBig};
 	transition: 0.5s;
+	@media ${mediaQueries.desktop} {
+		margin-right: 20%;
+	}
+
 	&:hover {
 		background: ${colors.main};
 		box-shadow: 5px 5px 20px rgba(10, 48, 77, 0.8);
