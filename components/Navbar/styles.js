@@ -27,6 +27,7 @@ export const NavbarContainer = styled.main`
 		font-weight: bold;
 		cursor: pointer;
 		transition: 0.5s;
+		outline: none;
 		&:hover {
 			color: ${colors.main};
 			box-shadow: 3px 3px 10px rgba(60, 141, 199, 0.5);

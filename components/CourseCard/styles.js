@@ -6,22 +6,22 @@ import { border, colors } from '../../globalStyles/stylesVariables';
 
 // ---------- COMPONENTS ---------- //
 export const Card = styled.div`
-	border-radius: ${border.borderRadiusSmall};
+	position: relative;
+	padding: 1em;
 	margin-bottom: 0.5em;
 	transition: 0.3s;
 	display: flex;
-	justify-content: space-between;
+	align-items: center;
+	border-radius: ${border.borderRadiusSmall};
 	&:hover {
 		box-shadow: 2px 2px 5px rgba(10, 48, 77, 0.8);
 	}
 	a {
-		width: 100%;
-		height: 100%;
-		display: flex;
-		align-items: center;
-		padding: 1em;
-		text-decoration: none;
-		color: ${colors.white};
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
 	}
 	background-color: ${(props) =>
 		props.checkCourse ? `${colors.main}` : `${colors.second}`};
@@ -35,7 +35,7 @@ export const Card = styled.div`
 `;
 export const CheckcompletCours = styled.button`
 	position: absolute;
-	right: 50px;
+	right: 1em;
 	background-color: transparent;
 	border: none;
 	outline: none;
@@ -47,4 +47,4 @@ export const CheckcompletCours = styled.button`
 		width: 30px;
 		height: 30px;
 	}
-`
+`;

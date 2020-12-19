@@ -5,6 +5,7 @@ export const login = () => (dispatch) => {
 		career: 'Frontend',
 		exp: 0,
 		lv: 1,
+		progress: 0,
 	};
 
 	dispatch({

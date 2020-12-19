@@ -18,16 +18,14 @@ export const CourseCard = ({ badge, name, link }) => {
 	};
 	return (
 		<Card checkCourse={checkCourse}>
-			<a href={link} target="_blank">
-				<img src={badge} alt={name} />
-				<h3>{name}</h3>
-				{!checkCourse && (
-					<CheckcompletCours onClick={endStep}>
-						<AiFillCheckCircle color="#98ca3f" />
-					</CheckcompletCours>
-				)}
-			</a>
+			<a href={link} target="_blank"></a>
+			<img src={badge} alt={name} />
+			<h3>{name}</h3>
+			{!checkCourse && (
+				<CheckcompletCours onClick={endStep}>
+					<AiFillCheckCircle color="#98ca3f" />
+				</CheckcompletCours>
+			)}
 		</Card>
 	);
 };
-

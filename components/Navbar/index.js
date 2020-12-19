@@ -14,7 +14,8 @@ import { NavbarContainer, NavbarImage, NavbarList } from './styles';
 
 // ---------- COMPONENT ---------- //
 export const Navbar = () => {
-	const { route } = useRouter();
+	const router = useRouter();
+	const { route } = router;
 	const dispatch = useDispatch();
 	const { name, email, lv } = useSelector((state) => state.userState);
 
@@ -57,7 +58,7 @@ export const Navbar = () => {
 					<li>Appointments</li>
 				</a>
 			</NavbarList>
-			<button>Logout</button>
+			<button onClick={() => router.push('/')}>Logout</button>
 		</NavbarContainer>
 	);
 };
