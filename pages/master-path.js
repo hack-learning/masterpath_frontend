@@ -11,7 +11,6 @@ import { Milestones } from '../components/Milestones';
 import { axiosClient } from '../axiosClient';
 
 // import Styles
-
 // ---------- COMPONENT ---------- //
 const MasterPath = () => {
 	const [courses, setcourses] = useState([]);
@@ -132,6 +131,7 @@ const MasterPath = () => {
 				<hr />
 				{courses.slice(3, 12).map((course) => (
 					<CourseCard
+						key={course.id}
 						name={course.title}
 						badge={course.badge_url}
 						link={course.url}
@@ -141,6 +141,7 @@ const MasterPath = () => {
 				<hr />
 				{courses.slice(19, 23).map((course) => (
 					<CourseCard
+						key={course.id}
 						name={course.title}
 						badge={course.badge_url}
 						link={course.url}

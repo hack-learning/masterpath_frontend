@@ -1,28 +1,19 @@
-export const login = () => (dispatch) => {
-	const user = {
-		user: 'Jose Garzon',
-		email: 'jd.garzon12@gmail.com',
-		career: 'Frontend',
-		exp: 0,
-		lv: 1,
-		progress: 0,
-	};
+import { axiosClient } from '../../axiosClient';
 
-	sessionStorage.setItem('exp', JSON.stringify(user.exp));
-	sessionStorage.setItem('lv', JSON.stringify(user.lv));
-	sessionStorage.setItem('progress', JSON.stringify(user.progress));
+export const login = () => async (dispatch) => {
+	const { data, status } = await axiosClient.get('students-list/');
 	dispatch({
 		type: 'GET_USER',
-		payload: user,
+		payload: data[0],
 	});
 };
 
 export const stepSucces = () => (dispatch, getState) => {
+	const { exp, id } = getState().userState;
 	dispatch({
 		type: 'STEP_SUCCES',
 	});
 
-	const { exp } = getState().userState;
 	if (exp >= 100) {
 		const resExp = exp - 100;
 		setTimeout(() => {
