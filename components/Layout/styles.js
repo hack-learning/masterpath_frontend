@@ -14,7 +14,7 @@ export const LayoutContainer = styled.main`
 `;
 
 export const Content = styled.main`
-	margin-left: 400px;
+	margin-left: 350px;
 	height: 95%;
 	width: 100%;
 `;
