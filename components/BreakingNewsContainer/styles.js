@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { mediaQueries, colors } from '../../globalStyles/stylesVariables'
 
 export const Container = styled.div`
-  height: 280px;
+  height: auto;
   width: 872px;
   display: flex;
   justify-content: center;
