@@ -9,7 +9,7 @@ export const CardNotification = styled.a`
   height: 120px;
   margin: 10px;
   border-radius: 20px;
-  background-color: rgba(60, 141, 199, 0.7);
+  background-color: rgba(24, 44, 63, 0.7);
   opacity: 1;
   text-decoration: none;
   overflow: hidden;

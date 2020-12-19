@@ -15,7 +15,7 @@ export const ModalNews = () => {
     return (
       <ModalNewsContainer>
           <ModalTitel>
-      <img onClick={handleClick} className={clase ? <ModalNewsContainer/> : <ModalNewsClose/>} src='/Close.svg' alt="Close icon" />
+            <img onClick={handleClick} className={clase ? <ModalNewsContainer/> : <ModalNewsClose/>} src='/Closebtn.svg' alt="Close icon" />
             <h3>News</h3>  
           </ModalTitel>
         <NewsCardNotification />

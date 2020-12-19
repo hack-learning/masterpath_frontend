@@ -6,9 +6,9 @@ export const ModalNewsContainer = styled.div`
   height: 500px;
   padding: 10px;
   z-index: 50;
-  position: relative;
-  margin-left: 50%;
-  right: 0;
+  position: absolute;
+  right: 30px;
+  top: 30px;
   opacity: 1;
   display: flex;
   flex-direction: column;
@@ -34,7 +34,7 @@ export const ModalTitel = styled.h3`
   font-size: 18px;
   margin-bottom: 15px;
   overflow: hidden;
-  color: ${colors.lightSecond};
+  color: ${colors.main};
   display: flex;
   justify-content: space-between;
 
