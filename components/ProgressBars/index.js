@@ -1,8 +1,10 @@
+import { useSelector } from 'react-redux';
 // import Styles
 import { Bar, BarsContainer, WeekMark, MarksContainers } from './styles';
 
 // ---------- COMPONENT ---------- //
 export const ProgressBar = () => {
+	const { progress } = useSelector((state) => state.userState);
 	const weeks = [
 		'Prework',
 		'Week 1',
@@ -17,10 +19,11 @@ export const ProgressBar = () => {
 		'Week 10',
 		'Week 12',
 	];
+	console.log(progress);
 
 	return (
 		<BarsContainer>
-			<Bar color="green" progress={20}>
+			<Bar color="green" progress={progress}>
 				<p>Progress</p>
 			</Bar>
 			<Bar progress={80}>

@@ -16,12 +16,19 @@ export const Container = styled.section`
 	font-weight: bold;
 	background-color: ${(props) =>
 		props.check === true ? `${colors.main}` : `${colors.darkSecond}`};
-	color: ${(props) =>
-		props.check === true ? `${colors.darkSecond}` : `${colors.main}`};
+	color: ${colors.main};
 	@media ${mediaQueries.desktop} {
 		width: 80px;
 		height: 80px;
 		border: 6px solid ${colors.main};
+	}
+
+	&:hover button {
+		opacity: 1;
+		transform: translateY(75px);
+		@media ${mediaQueries.desktop} {
+			transform: translateY(60px);
+		}
 	}
 
 	&::after {
@@ -41,12 +48,14 @@ export const Container = styled.section`
 		top: -105px;
 		left: 65px;
 		@media ${mediaQueries.desktop} {
-			top: -95px;
+			top: -105px;
 		}
 	}
 
 	p {
 		font-size: 2em;
+		color: ${(props) =>
+			props.check === true ? `${colors.darkSecond}` : `${colors.main}`};
 		&::after {
 			position: absolute;
 			content: '';
@@ -56,5 +65,20 @@ export const Container = styled.section`
 			left: 50%;
 			background: ${colors.main};
 		}
+	}
+`;
+
+export const CheckButton = styled.button`
+	position: absolute;
+	opacity: 0;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	transition: 0.3s;
+	cursor: pointer;
+
+	svg {
+		width: 30px;
+		height: 30px;
 	}
 `;
