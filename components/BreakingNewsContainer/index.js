@@ -8,40 +8,60 @@ export const BreakingNewsContainer = ({ data }) => {
 
   data = [
     {
-      title: "1 This is a test of an news title lorem ipsum lorem ipsum",
-      img: gravatar('garavitogerardo@gmail.com'),
+      title: "0 This is a test of an news title lorem ipsum lorem ipsum news title lorem ipsum lorem ipsum news title lorem ipsum lorem ipsum news title lorem ipsum lorem ipsum",
+      image_url: gravatar('garavitogerardo@gmail.com'),
       url: "/library",
+      overview: "lorem ipsum lorem ipsum lorem sips lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem sips lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem sips lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem sips lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
       id: 0
     },
     {
-      title: "2 This is a test of an news title lorem ipsum lorem ipsum",
-      img: gravatar('garavitogerardo@gmail.com'),
+      title: "1 This is a test of an news title lorem ipsum lorem ipsum",
+      image_url: gravatar('garavitogerardo@gmail.com'),
       url: "/library",
+      overview: "lorem ipsum lorem ipsum lorem sips lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
       id: 1
     },
     {
-      title: "3 This is a test of an news title lorem ipsum lorem ipsum",
-      img: gravatar('garavitogerardo@gmail.com'),
+      title: "2 This is a test of an news title lorem ipsum lorem ipsum",
+      image_url: gravatar('garavitogerardo@gmail.com'),
       url: "/library",
+      overview: "lorem ipsum lorem ipsum lorem sips lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
       id: 2
     },
     {
-      title: "4 This is a test of an news title lorem ipsum lorem ipsum",
-      img: gravatar('garavitogerardo@gmail.com'),
-      url: "/library",
-      id: 3
-    },
-    {
       title: "3 This is a test of an news title lorem ipsum lorem ipsum",
-      img: gravatar('garavitogerardo@gmail.com'),
+      image_url: gravatar('garavitogerardo@gmail.com'),
       url: "/library",
-      id: 2
+      overview: "lorem ipsum lorem ipsum lorem sips lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+      id: 3
     },
     {
       title: "4 This is a test of an news title lorem ipsum lorem ipsum",
-      img: gravatar('garavitogerardo@gmail.com'),
+      image_url: gravatar('garavitogerardo@gmail.com'),
       url: "/library",
-      id: 3
+      overview: "lorem ipsum lorem ipsum lorem sips lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+      id: 4
+    },
+    {
+      title: "5 This is a test of an news title lorem ipsum lorem ipsum",
+      image_url: gravatar('garavitogerardo@gmail.com'),
+      url: "/library",
+      overview: "lorem ipsum lorem ipsum lorem sips lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+      id: 5
+    },
+    {
+      title: "NO This is a test of an news title lorem ipsum lorem ipsum",
+      image_url: gravatar('garavitogerardo@gmail.com'),
+      url: "/library",
+      overview: "lorem ipsum lorem ipsum lorem sips lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+      id: 6
+    },
+    {
+      title: "NO This is a test of an news title lorem ipsum lorem ipsum",
+      image_url: gravatar('garavitogerardo@gmail.com'),
+      url: "/library",
+      overview: "lorem ipsum lorem ipsum lorem sips lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+      id: 7
     },
   ]
 
@@ -50,7 +70,7 @@ export const BreakingNewsContainer = ({ data }) => {
       <Title>Breaking News</Title>
       <News>
         {
-          data.map(item => (
+          data.slice(0, 6).map(item => (
             <NewsCard key={item.id} {...item} />
           ))
         }
