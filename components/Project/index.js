@@ -1,14 +1,18 @@
 // import Libraries
 import Link from 'next/link';
 
+// import component
+import { SelectProject } from '../../components/SelectProject';
 // import Styles
 import { ProjectContainer, Button } from './styles';
 
 // ---------- COMPONENT ---------- //
 export const Project = () => {
+	
 	return (
 		<>
 			<Button>Select Project</Button>
+			<SelectProject />
 			<ProjectContainer>
 				<a
 					target="_blank"

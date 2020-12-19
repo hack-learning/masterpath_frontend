@@ -5,6 +5,7 @@ export const ModalSelectProject = styled.div`
   width: 20%;
   height: 500px;
   left: 40%;
+  top: 20%;
   border-radius: 20px;
   background-color: ${colors.second};
   opacity: .93;
@@ -14,9 +15,9 @@ export const ModalSelectProject = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 10;
-  animation: modalIn .8s forwards;
+  animation: selectprojectIn .8s forwards;
 
-    @keyframes modalIn {
+    @keyframes selectprojectIn {
             0%{
                 transform: translateY(-3000px);
             }
