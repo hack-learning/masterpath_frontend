@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { hoverScale } from '../../globalStyles/animations';
+import { hoverScale, changeColor } from '../../globalStyles/animations';
 import { colors } from '../../globalStyles/stylesVariables';
 
 export const Container = styled.div`
@@ -97,7 +97,7 @@ export const CheckButton = styled.button`
 	};
 
 	&:hover {
-		background-color: ${colors.main};
+		${changeColor};
 		cursor: pointer;
 	}
 `
