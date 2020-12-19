@@ -8,8 +8,6 @@ export const Container = styled.div`
 `
 
 export const News = styled.div`
-  height: auto;
-  width: 100%;
   max-width: 1300px;
   display: flex;
   justify-content: center;
@@ -18,7 +16,7 @@ export const News = styled.div`
 `
 
 export const Title = styled.h1`
+  margin: 10px 15%;
   color: ${colors.white};
-  margin: 10px 10px 10px 100px;
   font-size: 24px;
 `
