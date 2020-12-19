@@ -2,9 +2,9 @@ const initial_state = {
 	user: '',
 	email: '',
 	career: '',
-	exp: 1,
-	lv: 1,
-	progress: 0,
+	exp: '',
+	lv: '',
+	progress: '',
 };
 
 export const userState = (state = initial_state, action) => {
@@ -14,7 +14,7 @@ export const userState = (state = initial_state, action) => {
 		case 'GET_USER':
 			return { ...payload };
 		case 'STEP_SUCCES':
-			return { ...state, exp: state.exp + 50, progress: state.progress + 10 };
+			return { ...state, exp: state.exp + 80, progress: state.progress + 10 };
 		case 'COURSE_SUCCES':
 			return { ...state, exp: state.exp + 10 };
 		case 'BUG_SUCCES':
