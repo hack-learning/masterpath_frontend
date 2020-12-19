@@ -1,7 +1,9 @@
 const initial_state = {
+	id: 1,
 	user: '',
 	email: '',
 	career: '',
+	status: '0',
 	exp: '',
 	lv: '',
 	progress: '',

@@ -9,9 +9,8 @@ import { CourseCard } from '../components/CourseCard';
 import { Milestones } from '../components/Milestones';
 //import { SelectProject } from '../components/SelectProject';
 import { axiosClient } from '../axiosClient';
-
+import { ModalNews } from '../components/ModalNews';
 // import Styles
-
 // ---------- COMPONENT ---------- //
 const MasterPath = () => {
 	const [courses, setcourses] = useState([]);
@@ -25,6 +24,7 @@ const MasterPath = () => {
 
 	return (
 		<Layout>
+			<ModalNews />
 			<ProgressBar />
 			<Project />
 			{/* <SelectProject /> */}
@@ -132,6 +132,7 @@ const MasterPath = () => {
 				<hr />
 				{courses.slice(3, 12).map((course) => (
 					<CourseCard
+						key={course.id}
 						name={course.title}
 						badge={course.badge_url}
 						link={course.url}
@@ -141,6 +142,7 @@ const MasterPath = () => {
 				<hr />
 				{courses.slice(19, 23).map((course) => (
 					<CourseCard
+						key={course.id}
 						name={course.title}
 						badge={course.badge_url}
 						link={course.url}

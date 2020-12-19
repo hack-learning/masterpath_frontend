@@ -1,21 +1,17 @@
-import { Card, NewsTitle, ImgContainer, Img, Overview } from './style'
+import { Card, News, ImgContainer, Img, Overview, Title, Tags } from './style'
 
 
-export const NewsCard = ({ title, image_url, url, overview }) => {
+export const NewsCard = ({ title, image_url, url, overview, tags }) => {
 
 
   return (
     <Card href={url} target="_blank">
-      <NewsTitle>{title}</NewsTitle>
+      <News>
+        <Title>{title}</Title>
+      </News>
       <ImgContainer>
         <Img src={image_url} />
       </ImgContainer>
     </Card>
   )
-  // return (
-  //   <Card href={url} target="_blank">
-  //     <NewsTitle>{title}</NewsTitle>
-  //     <Overview>{overview}</Overview>
-  //   </Card>
-  // )
 }
