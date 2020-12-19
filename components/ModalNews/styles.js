@@ -10,7 +10,7 @@ export const ModalNewsContainer = styled.div`
   right: 30px;
   top: 30px;
   opacity: 1;
-  display: flex;
+  display: ${props => props.open === true ? 'flex' : 'none'};
   flex-direction: column;
   animation: modalIn .8s forwards;
 

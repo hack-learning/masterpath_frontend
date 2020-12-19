@@ -3,19 +3,19 @@ import { NewsCardNotification } from '../NewsCardNotification'
 import React, { useState } from 'react';
 
 //import Style
-import { ModalNewsContainer, ModalTitel, ModalNewsClose } from './styles'
+import { ModalNewsContainer, ModalTitel } from './styles'
 
 export const ModalNews = () => {
   const [clase, setClase] = useState(true);
         
-  const handleClick = () => {
-      setClase(!clase);
+  const closeModal = () => {
+      setClase(false);
   };
   
     return (
-      <ModalNewsContainer>
+      <ModalNewsContainer open={clase}>
           <ModalTitel>
-            <img onClick={handleClick} className={clase ? <ModalNewsContainer/> : <ModalNewsClose/>} src='/Closebtn.svg' alt="Close icon" />
+            <img onClick={closeModal} src='/Closebtn.svg' alt="Close icon" />
             <h3>News</h3>  
           </ModalTitel>
         <NewsCardNotification />
