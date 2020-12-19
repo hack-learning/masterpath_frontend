@@ -20,10 +20,12 @@ export const stepSucces = () => (dispatch, getState) => {
 	});
 
 	const { exp } = getState().userState;
-	if (exp === 100) {
+	if (exp > 100) {
+		const resExp = exp - 100;
 		setTimeout(() => {
 			dispatch({
 				type: 'LEVEL_UP',
+				payload: resExp,
 			});
 		}, 500);
 	}
@@ -35,10 +37,12 @@ export const courseSucces = () => (dispatch, getState) => {
 	});
 
 	const { exp } = getState().userState;
-	if (exp === 100) {
+	if (exp > 100) {
+		const resExp = exp - 100;
 		setTimeout(() => {
 			dispatch({
 				type: 'LEVEL_UP',
+				payload: resExp,
 			});
 		}, 500);
 	}
@@ -50,10 +54,12 @@ export const bugSucces = () => (dispatch, getState) => {
 	});
 
 	const { exp } = getState().userState;
-	if (exp === 100) {
+	if (exp > 100) {
+		const resExp = exp - 100;
 		setTimeout(() => {
 			dispatch({
 				type: 'LEVEL_UP',
+				payload: resExp,
 			});
 		}, 500);
 	}
