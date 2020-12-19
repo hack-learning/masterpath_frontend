@@ -22,7 +22,7 @@ export const BugCardContainer = ({ data }) => {
     },
     {
       title: "This is a bug title lorem ipsum lorem ipsum  3",
-      description: "lorem BUG DESCRIPTION dolor sit amet consectetur, adipisicing elit. Tempore asperiores laudantium unde deserunt eum, recusandae suscipit illo libero sed molestiae tempora odio odit corporis voluptatem reiciendis rerum distinctio, repellendus ad. ur, adipisicing elit. Tempore asperiores laudantium unde deserunt eum, recusandae suscipit illo libero sed molestiae tempora odio odit corporis voluptatem reiciendis rerum distinctio, repellendus ad.",
+      description: "lorem BUG DESCRIPTION dolor sit amet consectetur, adipisicing elit. Tempore asperiores laudantium unde deserunt eum, recusandae suscipit illo libero sed molestiae tempora odio odit corporis voluptatem reiciendis rerum distinctio, repellendus ad. ur, adipisicing elit. Tempore asperiores laudantium unde deserunt eum, recusandae suscipit illo libero sed molestiae tempora odio odit corporis voluptatem reiciendis rerum distinctio, repellendus ad. dfdffdfdfdf",
       project: "Project test 3",
       user: "Name Last Name 3",
       url: "/",
