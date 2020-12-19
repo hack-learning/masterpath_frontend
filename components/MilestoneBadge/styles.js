@@ -16,8 +16,7 @@ export const Container = styled.section`
 	font-weight: bold;
 	background-color: ${(props) =>
 		props.check === true ? `${colors.main}` : `${colors.darkSecond}`};
-	color: ${(props) =>
-		props.check === true ? `${colors.darkSecond}` : `${colors.main}`};
+	color: ${colors.main};
 	@media ${mediaQueries.desktop} {
 		width: 80px;
 		height: 80px;
@@ -55,6 +54,8 @@ export const Container = styled.section`
 
 	p {
 		font-size: 2em;
+		color: ${(props) =>
+			props.check === true ? `${colors.darkSecond}` : `${colors.main}`};
 		&::after {
 			position: absolute;
 			content: '';
