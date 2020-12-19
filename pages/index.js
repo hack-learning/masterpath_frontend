@@ -65,6 +65,8 @@ const Home = () => {
 					placeholder="Password"
 					onChange={handleInput}
 				/>
+				<p>user: 'jd.garzon12@gmail.com'</p>
+				<p>password: 'platzi master'</p>
 				{error.user && <p>{error.user}</p>}
 				{error.password && <p>{error.password}</p>}
 				<button type="submit">Login</button>
