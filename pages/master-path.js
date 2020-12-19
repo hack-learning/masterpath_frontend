@@ -9,7 +9,7 @@ import { CourseCard } from '../components/CourseCard';
 import { Milestones } from '../components/Milestones';
 //import { SelectProject } from '../components/SelectProject';
 import { axiosClient } from '../axiosClient';
-
+import { ModalNews } from '../components/ModalNews';
 // import Styles
 
 // ---------- COMPONENT ---------- //
@@ -25,6 +25,7 @@ const MasterPath = () => {
 
 	return (
 		<Layout>
+			<ModalNews />
 			<ProgressBar />
 			<Project />
 			{/* <SelectProject /> */}

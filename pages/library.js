@@ -2,7 +2,6 @@
 
 // import Components
 import { Layout } from '../components/Layout';
-import { ModalNews } from '../components/ModalNews'
 import { BreakingNewsContainer } from '../components/BreakingNewsContainer'
 import { SearchBar } from '../components/SearchBar'
 import { ArticleContainer } from '../components/ArticleContainer'
@@ -13,7 +12,6 @@ const Library = () => {
 	return (
 		<Layout>
 			<ProgressBar />
-			<ModalNews />
 			<BreakingNewsContainer />
 			<SearchBar />
 			<ArticleContainer />
