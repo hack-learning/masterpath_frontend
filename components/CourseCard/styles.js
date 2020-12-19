@@ -9,6 +9,8 @@ export const Card = styled.div`
 	border-radius: ${border.borderRadiusSmall};
 	margin-bottom: 0.5em;
 	transition: 0.3s;
+	display: flex;
+	justify-content: space-between;
 	&:hover {
 		box-shadow: 2px 2px 5px rgba(10, 48, 77, 0.8);
 	}
@@ -22,7 +24,7 @@ export const Card = styled.div`
 		color: ${colors.white};
 	}
 	background-color: ${(props) =>
-		props.finish ? `${colors.main}` : `${colors.second}`};
+		props.checkCourse ? `${colors.main}` : `${colors.second}`};
 
 	img {
 		width: 35px;
@@ -31,3 +33,17 @@ export const Card = styled.div`
 		margin-right: 2em;
 	}
 `;
+export const CheckcompletCours = styled.button`
+	position: absolute;
+	right: 50px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	transition: 0.3s;
+	cursor: pointer;
+
+	svg {
+		width: 30px;
+		height: 30px;
+	}
+`
