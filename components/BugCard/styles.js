@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { hoverScale } from '../../globalStyles/animations';
 import { colors } from '../../globalStyles/stylesVariables';
 
-export const Card = styled.a`
+export const Container = styled.div`
 	height: 300px;
 	width: 216px;
 	background-color: ${colors.second};
@@ -13,8 +13,6 @@ export const Card = styled.a`
 	margin: 10px;
 	overflow: hidden;
 	box-shadow: 5px 5px 10px rgba(10, 48, 77, 0.8);
-	display: grid;
-	grid-template-rows: 10% 12% 46% 7% 10% 15%;
 
 	&:hover {
 		cursor: pointer;
@@ -24,6 +22,20 @@ export const Card = styled.a`
 	&:hover .BugCard__link {
 		color: #98ca3f;
 	}
+`
+
+export const Card = styled.a`
+	height: 78%;
+	width: inherit;
+	background-color: none;
+	border-radius: 20px;
+	color: ${colors.white};
+	text-decoration: none;
+	overflow: hidden;
+	box-shadow: 5px 5px 10px rgba(10, 48, 77, 0.8);
+	display: grid;
+	grid-template-rows: 13% 15% 45% 3% 15% 10% ;
+
 `;
 
 export const LinkIcon = styled.div`
@@ -68,3 +80,23 @@ export const UserName = styled.p`
 	white-space: nowrap;
 	text-overflow: ellipsis;
 `;
+
+export const CheckButton = styled.button`
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	width: 91%;
+	border: none;
+	outline: none;
+	color: ${colors.white};
+	align-items: center;
+	border-radius: 5px;
+	margin: 5px 10px 10px 10px;
+	background-color: ${
+		props => props.solved ? `${colors.main}` : `${colors.lightSecond}`
+	};
+
+	&:hover {
+		background-color: ${colors.main};
+	}
+`
