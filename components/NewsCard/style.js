@@ -25,13 +25,24 @@ export const Card = styled.a`
 `;
 
 export const NewsTitle = styled.h3`
-	font-size: 18px;
-	margin: 15px;
+	font-size: 19px;
+	margin: 15px 15px 10px 15px;
 	overflow: hidden;
 	grid-column: 1 / 2;
 	position: relative;
 	z-index: 2;
-`;
+	/* white-space: nowrap;
+	text-overflow: ellipsis; */
+`
+
+export const Overview = styled.p`
+	height: 50%;
+	font-size: 12px;
+	color: ${colors.white};
+	margin: 0px 15px 10px 15px;
+	overflow: hidden;
+	text-align: justify;
+`
 
 export const ImgContainer = styled.div`
 	width: 85px;
