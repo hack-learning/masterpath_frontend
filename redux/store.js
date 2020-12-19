@@ -6,7 +6,8 @@ import thunkMiddleware from 'redux-thunk';
 
 //------------------------------ Import and combine reducers
 import { userState } from './reducers/userState';
-const rootReducer = combineReducers({ userState });
+import { projectState } from './reducers/ProjectState';
+const rootReducer = combineReducers({ userState, projectState });
 
 //------------------------------ create the store
 let store;

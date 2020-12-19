@@ -1,5 +1,6 @@
 // import Libraries
 import Link from 'next/link';
+import { useSelector } from 'react-redux';
 
 // import component
 import { SelectProject } from '../../components/SelectProject';
@@ -8,24 +9,16 @@ import { ProjectContainer, Button } from './styles';
 
 // ---------- COMPONENT ---------- //
 export const Project = () => {
-	
+	const { name, description, url } = useSelector((state) => state.projectState);
+
 	return (
 		<>
 			<Button>Select Project</Button>
-			<SelectProject />
+			{/* <SelectProject /> */}
 			<ProjectContainer>
-				<a
-					target="_blank"
-					href={'https://github.com/hack-learning/masterpath_frontend'}
-				>
-					<h1>Clon de Spotify</h1>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-						doloribus est, consequuntur enim quia provident dolores
-						necessitatibus reprehenderit laboriosam quidem? Totam fugit a
-						necessitatibus! Voluptate commodi tempora eligendi officia
-						perferendis quas, veritatis deleniti voluptatem ipsum.
-					</p>
+				<a target="_blank" href={url}>
+					<h1>{name}</h1>
+					<p>{description}</p>
 				</a>
 			</ProjectContainer>
 		</>

@@ -1,10 +1,13 @@
 // import Libraries
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useSelector, useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 
 // import Components
 import { Expbar } from '../Expbar';
 import { gravatar } from '../../utils/gravatar';
+import { login } from '../../redux/actions/userActions';
 
 // import Styles
 import { NavbarContainer, NavbarImage, NavbarList } from './styles';
@@ -12,15 +15,21 @@ import { NavbarContainer, NavbarImage, NavbarList } from './styles';
 // ---------- COMPONENT ---------- //
 export const Navbar = () => {
 	const { route } = useRouter();
-	const level = 1;
+	const dispatch = useDispatch();
+	const { name, email, lv } = useSelector((state) => state.userState);
+
+	useEffect(() => {
+		dispatch(login());
+	}, []);
+
 	return (
 		<NavbarContainer>
 			<NavbarImage>
-				<img src={gravatar('jd.garzon12@gmail.com')} alt="" />
+				<img src={gravatar(email)} alt={name} />
 				<Expbar />
-				<h3>Jose Garzon</h3>
+				<h3>{name}</h3>
 				<p>
-					Lv: <span>{level}</span> / 50
+					Lv: <span>{lv}</span> / 50
 				</p>
 			</NavbarImage>
 			<NavbarList>

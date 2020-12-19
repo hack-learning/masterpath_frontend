@@ -8,12 +8,12 @@ const request = async (path, method, body) => {
 			url: `${BASE_URL}${path}`,
 			method,
 			data: body,
-			withCredentials: true,
+			// withCredentials: true,
 		});
 		return { data, status };
 	} catch (error) {
-		const data = error.response.data || {};
-		const status = error.response.status || 500;
+		const data = error.response?.data || {};
+		const status = error.response?.status || 500;
 		return { data, status };
 	}
 };
