@@ -52,7 +52,7 @@ export const NavbarImage = styled.div`
 		color: ${colors.white};
 	}
 
-	p {
+	h2 {
 		color: ${colors.white};
 		span {
 			color: ${colors.main};

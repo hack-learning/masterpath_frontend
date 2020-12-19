@@ -19,7 +19,6 @@ export const ProgressBar = () => {
 		'Week 10',
 		'Week 12',
 	];
-	console.log(progress);
 
 	return (
 		<BarsContainer>

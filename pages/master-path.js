@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 // import Components
 import { Layout } from '../components/Layout';
@@ -14,13 +14,14 @@ import { axiosClient } from '../axiosClient';
 
 // ---------- COMPONENT ---------- //
 const MasterPath = () => {
-	//
-	// useEffect(() => {
-	// 	(async function getCourses() {
-	// 		const { data, status } = await axiosClient.get('courses-list/');
-	// 		console.log(data);
-	// 	})();
-	// }, []);
+	const [courses, setcourses] = useState([]);
+
+	useEffect(() => {
+		(async function getCourses() {
+			const { data, status } = await axiosClient.get('courses-list/');
+			setcourses(data);
+		})();
+	}, []);
 
 	return (
 		<Layout>
@@ -28,8 +29,27 @@ const MasterPath = () => {
 			<Project />
 			{/* <SelectProject /> */}
 			<Milestones />
-			<CoursesContainer title="Prework">
-				<h3>Week 1</h3>
+			<CoursesContainer title="Master Path">
+				<h3>Requerimientos</h3>
+				<hr />
+				{/* {courses.slice(4).map((course) => (
+					<CourseCard
+						name={course.title}
+						badge={course.badge_url}
+						link={course.url}
+					/>
+				))} */}
+				<CourseCard
+					name="Responsive Design"
+					badge="badgeResponsive.webp"
+					link="https://platzi.com/clases/mobile-first/"
+				/>
+				<CourseCard
+					name="Responsive Design"
+					badge="badgeResponsive.webp"
+					link="https://platzi.com/clases/mobile-first/"
+				/>
+				<h3>Diseño</h3>
 				<hr />
 				<CourseCard
 					name="Responsive Design"
@@ -41,12 +61,54 @@ const MasterPath = () => {
 					badge="badgeResponsive.webp"
 					link="https://platzi.com/clases/mobile-first/"
 				/>
-				<h3>Week 2</h3>
+				<h3>Desarrollo</h3>
 				<hr />
-			</CoursesContainer>
-			<CoursesContainer title="MasterPath">
-				<h3>Week 1</h3>
+				<CourseCard
+					name="Responsive Design"
+					badge="badgeResponsive.webp"
+					link="https://platzi.com/clases/mobile-first/"
+				/>
+				<CourseCard
+					name="Responsive Design"
+					badge="badgeResponsive.webp"
+					link="https://platzi.com/clases/mobile-first/"
+				/>
+				<h3>Pruebas</h3>
 				<hr />
+				<CourseCard
+					name="Responsive Design"
+					badge="badgeResponsive.webp"
+					link="https://platzi.com/clases/mobile-first/"
+				/>
+				<CourseCard
+					name="Responsive Design"
+					badge="badgeResponsive.webp"
+					link="https://platzi.com/clases/mobile-first/"
+				/>
+				<h3>Despliegue</h3>
+				<hr />
+				<CourseCard
+					name="Responsive Design"
+					badge="badgeResponsive.webp"
+					link="https://platzi.com/clases/mobile-first/"
+				/>
+				<CourseCard
+					name="Responsive Design"
+					badge="badgeResponsive.webp"
+					link="https://platzi.com/clases/mobile-first/"
+				/>
+				<h3>Operaciones</h3>
+				<hr />
+				<CourseCard
+					name="Responsive Design"
+					badge="badgeResponsive.webp"
+					link="https://platzi.com/clases/mobile-first/"
+				/>
+				<CourseCard
+					name="Responsive Design"
+					badge="badgeResponsive.webp"
+					link="https://platzi.com/clases/mobile-first/"
+				/>
 			</CoursesContainer>
 		</Layout>
 	);
