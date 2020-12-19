@@ -43,6 +43,3 @@ export const ModalTitel = styled.h3`
     }
     
 `
-export const ModalNewsClose = styled.div`
-    display: none;
-`
