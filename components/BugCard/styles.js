@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { hoverScale } from '../../globalStyles/animations';
+import { hoverScale, changeColor } from '../../globalStyles/animations';
 import { colors } from '../../globalStyles/stylesVariables';
 
 export const Container = styled.div`
@@ -34,7 +34,7 @@ export const Card = styled.a`
 	overflow: hidden;
 	box-shadow: 5px 5px 10px rgba(10, 48, 77, 0.8);
 	display: grid;
-	grid-template-rows: 13% 15% 45% 3% 15% 10% ;
+	grid-template-rows: 15% 15% 46% 0% 15% 10% ;
 
 `;
 
@@ -97,7 +97,7 @@ export const CheckButton = styled.button`
 	};
 
 	&:hover {
-		background-color: ${colors.main};
+		${changeColor};
 		cursor: pointer;
 	}
 `

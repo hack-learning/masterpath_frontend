@@ -31,6 +31,10 @@ export const NewsTitleNotification = styled.h3`
 	grid-column: 1 / 2;
 	position: relative;
 	z-index: 2;
+
+	p{
+		font-size: 10px;
+	}
 `;
 
 export const ImgContainerNotif = styled.div`

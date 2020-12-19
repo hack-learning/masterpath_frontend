@@ -8,6 +8,9 @@ export const login = () => (dispatch) => {
 		progress: 0,
 	};
 
+	sessionStorage.setItem('exp', JSON.stringify(user.exp));
+	sessionStorage.setItem('lv', JSON.stringify(user.lv));
+	sessionStorage.setItem('progress', JSON.stringify(user.progress));
 	dispatch({
 		type: 'GET_USER',
 		payload: user,
@@ -20,7 +23,7 @@ export const stepSucces = () => (dispatch, getState) => {
 	});
 
 	const { exp } = getState().userState;
-	if (exp > 100) {
+	if (exp >= 100) {
 		const resExp = exp - 100;
 		setTimeout(() => {
 			dispatch({
@@ -37,7 +40,7 @@ export const courseSucces = () => (dispatch, getState) => {
 	});
 
 	const { exp } = getState().userState;
-	if (exp > 100) {
+	if (exp >= 100) {
 		const resExp = exp - 100;
 		setTimeout(() => {
 			dispatch({
@@ -54,7 +57,7 @@ export const bugSucces = () => (dispatch, getState) => {
 	});
 
 	const { exp } = getState().userState;
-	if (exp > 100) {
+	if (exp >= 100) {
 		const resExp = exp - 100;
 		setTimeout(() => {
 			dispatch({
