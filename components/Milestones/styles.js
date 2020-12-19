@@ -9,6 +9,7 @@ export const Container = styled.section`
 	width: 1440px;
 	display: flex;
 	justify-content: space-around;
+	margin: 0 auto;
 	margin-bottom: 20em;
 	transform: translateY(40%);
 	@media ${mediaQueries.desktop} {
