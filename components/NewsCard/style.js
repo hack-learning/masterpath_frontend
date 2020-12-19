@@ -24,15 +24,39 @@ export const Card = styled.a`
 	}
 `;
 
-export const NewsTitle = styled.h3`
-	font-size: 19px;
+export const News = styled.div`
 	margin: 15px 15px 10px 15px;
 	overflow: hidden;
 	grid-column: 1 / 2;
-	position: relative;
-	z-index: 2;
-	/* white-space: nowrap;
-	text-overflow: ellipsis; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+`
+
+export const Title = styled.h3`
+	font-size: 19px;
+	overflow: hidden;
+	height: 45px;
+`
+export const Tags = styled.div`
+	display: flex;
+	overflow: hidden;
+	justify-content: space-around;
+	align-items: center;
+
+	& p {
+		color: ${colors.white};
+		background-color: ${colors.main};
+		padding: 2px 10px;
+		border-radius: 5px;
+		max-width: 65px;
+		height: 14px;
+		font-size: 12px;
+		opacity: 0.9;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
 `
 
 export const Overview = styled.p`
