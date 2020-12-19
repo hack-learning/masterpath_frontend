@@ -31,6 +31,18 @@ export const BreakingNewsContainer = ({ data }) => {
       url: "/library",
       id: 3
     },
+    {
+      title: "3 This is a test of an news title lorem ipsum lorem ipsum",
+      img: gravatar('garavitogerardo@gmail.com'),
+      url: "/library",
+      id: 2
+    },
+    {
+      title: "4 This is a test of an news title lorem ipsum lorem ipsum",
+      img: gravatar('garavitogerardo@gmail.com'),
+      url: "/library",
+      id: 3
+    },
   ]
 
   return(

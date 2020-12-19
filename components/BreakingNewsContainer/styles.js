@@ -8,7 +8,7 @@ export const Container = styled.div`
 `
 
 export const News = styled.div`
-  max-width: 1300px;
+  /* max-width: 1300px; */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

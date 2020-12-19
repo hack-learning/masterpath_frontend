@@ -63,8 +63,8 @@ export const ArticleContainer = ({ data }) => {
 
   return(
     <Container>
-      <Title>Library</Title>
       <Articles>
+      <Title>Library</Title>
       {
         data.map( item => (
           <ArticleCard key={item.id} {...item} />
