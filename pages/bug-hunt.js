@@ -9,7 +9,6 @@ import { BugCardContainer } from '../components/BugCardContainer';
 const BugHunt = () => {
 	return (
 		<Layout>
-			<h1>Esto es Bug hunt</h1>
 			<BugCardContainer/>
 		</Layout>
 	);

@@ -17,7 +17,6 @@ const Home = () => {
 	};
 
 	return (
-<<<<<<< HEAD
 		<Container onSubmit={handleSubmit}>
 			<Form>
 				<h1>Master Path</h1>
@@ -28,16 +27,6 @@ const Home = () => {
 				<button type="submit">Login</button>
 			</Form>
 		</Container>
-=======
-		<>
-			<h1>Esto es el home</h1>
-			<Link href="/master-path">
-				<button>Go to master path</button>
-			</Link>
-			<BugCard />
-			<NewsCard />
-		</>
->>>>>>> 1c3022b89852a3e4df7d39ab15f411b85efc06c2
 	);
 };
 
