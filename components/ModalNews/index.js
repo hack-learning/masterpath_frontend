@@ -18,9 +18,19 @@ export const ModalNews = () => {
             <img onClick={closeModal} src='/Closebtn.svg' alt="Close icon" />
             <h3>News</h3>  
           </ModalTitel>
+<<<<<<< HEAD
         <NewsCardNotification />
         <NewsCardNotification />
         <NewsCardNotification />
+=======
+          {/* {notificationNews.slice(4).map(() => (
+					<NewsCardNotification
+						titel={titel}
+						url={url}
+						pub_time={pub_data}
+					/>
+				))} */}
+>>>>>>> feature/course
       </ModalNewsContainer>
     )
   }
