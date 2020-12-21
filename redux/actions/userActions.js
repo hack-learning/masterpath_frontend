@@ -1,10 +1,17 @@
 import { axiosClient } from '../../axiosClient';
 
 export const login = () => async (dispatch) => {
-	const { data, status } = await axiosClient.get('students-list/');
+	const user = {
+		user: 'Jose Garzón',
+		email: 'jd.garzon12@gmail.com',
+		career: 'Frontend',
+		lv: 4,
+		exp: 10,
+		progress: 10,
+	};
 	dispatch({
 		type: 'GET_USER',
-		payload: data[0],
+		payload: user,
 	});
 };
 

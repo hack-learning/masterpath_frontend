@@ -42,9 +42,9 @@ export const Navbar = () => {
 				<Link href="/bug-hunt">
 					<li className={route === '/bug-hunt' ? 'active' : null}>Bug Hunt</li>
 				</Link>
-				<Link href="/library">
+				{/* <Link href="/library">
 					<li className={route === '/library' ? 'active' : null}>Library</li>
-				</Link>
+				</Link> */}
 				<a target="_blank" href="https://master.platzi.com/dashboard/calendar">
 					<li>This Week</li>
 				</a>
