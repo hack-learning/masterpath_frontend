@@ -14,19 +14,19 @@ import { axiosDS } from '../axiosClient/DS';
 // import Styles
 
 const Library = () => {
-	const [news, setNews] = useState([]);
+	// const [news, setNews] = useState([]);
 
-	useEffect(() => {
-		(async function getNews() {
-			const { data, status } = await axiosClient.get('information-list/');
-			setNews(data);
-		})();
-	}, []);
+	// useEffect(() => {
+	// 	(async function getNews() {
+	// 		const { data, status } = await axiosClient.get('information-list/');
+	// 		setNews(data);
+	// 	})();
+	// }, []);
 
 	return (
 		<Layout>
 			<ProgressBar />
-			<BreakingNewsContainer data={news} />
+			{/* <BreakingNewsContainer data={news} /> */}
 			<SearchBar />
 			<ArticleContainer />
 		</Layout>

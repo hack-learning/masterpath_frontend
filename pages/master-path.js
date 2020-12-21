@@ -24,7 +24,7 @@ const MasterPath = () => {
 
 	return (
 		<Layout>
-			<ModalNews />
+			{/* <ModalNews /> */}
 			<ProgressBar />
 			<Project />
 			{/* <SelectProject /> */}
@@ -130,24 +130,48 @@ const MasterPath = () => {
 				/>
 				<h3>Despliegue</h3>
 				<hr />
-				{courses.slice(3, 12).map((course) => (
-					<CourseCard
-						key={course.id}
-						name={course.title}
-						badge={course.badge_url}
-						link={course.url}
-					/>
-				))}
+				<CourseCard
+					name="Curso de React.js"
+					badge="react.webp"
+					link="https://platzi.com/clases/react/"
+				/>
+				<CourseCard
+					name="Curso de Gestión de Dependencias y Paquetes con NPM"
+					badge="npm.webp"
+					link="https://platzi.com/clases/npm/"
+				/>
+				<CourseCard
+					name="Curso de Redux por Bedu"
+					badge="redux.webp"
+					link="https://platzi.com/clases/redux/"
+				/>
+				<CourseCard
+					name="Curso de Webpack"
+					badge="webpack.webp"
+					link="https://platzi.com/clases/webpack/"
+				/>
 				<h3>Operaciones</h3>
 				<hr />
-				{courses.slice(19, 23).map((course) => (
-					<CourseCard
-						key={course.id}
-						name={course.title}
-						badge={course.badge_url}
-						link={course.url}
-					/>
-				))}
+				<CourseCard
+					name="Curso Profesional de Git y GitHub"
+					badge="github.webp"
+					link="https://platzi.com/clases/git-github/"
+				/>
+				<CourseCard
+					name="Curso de Frontend Developer"
+					badge="frontend.webp"
+					link="https://platzi.com/clases/frontend-developer/"
+				/>
+				<CourseCard
+					name="Fundamentos de JavaScript"
+					badge="fundamentosjs.webp"
+					link="https://platzi.com/clases/fundamentos-javascript/"
+				/>
+				<CourseCard
+					name="Curso de Asincronismo con JavaScript"
+					badge="asincronismo.webp"
+					link="https://platzi.com/clases/asincronismo-js/"
+				/>
 			</CoursesContainer>
 		</Layout>
 	);
